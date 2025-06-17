@@ -13,32 +13,32 @@ const Home = () => {
   const services = [
     {
       number: "1",
-      title: "Recruitment Services",
-      description: "Find and place the right talent in the right positions. We specialize in connecting skilled professionals with organizations that value their expertise.",
+      title: "Migration Service",
+      description: "Legally migrate to your dream country with ease — we handle all documentation and legal processes from start to finish.",
       icon: <Users className="service-icon" />,
       bgColorClass: "bg-red-500", // Using descriptive class names for colors
       hoverColorClass: "hover-bg-red-600"
     },
     {
       number: "2",
-      title: "Training & Development",
-      description: "Enhance your workforce capabilities through comprehensive training programs designed to boost productivity and career growth.",
+      title: "Study Abroad",
+      description: "Study abroad at top universities. We specialize in overseas education, guidance, and placement for a successful global academic journey.",
       icon: <TrendingUp className="service-icon" />,
       bgColorClass: "bg-yellow-500",
       hoverColorClass: "hover-bg-yellow-600"
     },
     {
       number: "3",
-      title: "Employment Solutions",
-      description: "Navigate the complexities of employment with our expert guidance on contracts, compliance, and workforce management.",
+      title: "Job Visa",
+      description: "Maximize your earnings—post your resume and we’ll match you with the best job opportunities that fit your skills perfectly.",
       icon: <Shield className="service-icon" />,
       bgColorClass: "bg-gray-800",
       hoverColorClass: "hover-bg-gray-700"
     },
     {
       number: "4",
-      title: "HR Consulting",
-      description: "Strategic HR consultation services to optimize your human resource operations and drive organizational excellence.",
+      title: "Tourist Visa",
+      description: "Travel to your favorite destination with ease—we specialize in arranging customized tour packages for you anywhere around the world.",
       icon: <Award className="service-icon" />,
       bgColorClass: "bg-gray-600",
       hoverColorClass: "hover-bg-gray-500"
@@ -46,7 +46,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { value: "500+", label: "Companies Served" },
+    { value: "5000+", label: "Students Served" },
     { value: "10K+", label: "Placements Made" },
     { value: "98%", label: "Client Satisfaction" },
     { value: "7+", label: "Years Experience" }
@@ -84,23 +84,23 @@ const Home = () => {
         <div className="hero-content">
           <div className="hero-badge">
             <div className="badge-dot"></div>
-            <span className="badge-text">Trusted by 500+ Companies Worldwide</span>
+            <span className="badge-text">Trusted by 5000+ Students Worldwide</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="main-headline">
             <span className="headline-part-1">
-              From Respect to
+            Explore, Learn, Thrive: 
             </span>
             <br />
             <span className="headline-part-2">
-              HR Excellence
+            Build Your Future Abroad
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="hero-subtitle">
-            Welcome to <span className="highlight-text">RREmpire HR Solutions Pvt. Ltd.</span> — where Respect, Honesty, and Trust build exceptional workforces that drive organizational success.
+            Welcome to <span className="highlight-text">RREmpire HR Solutions Pvt. Ltd.</span> — Unlock endless opportunities to study, work, and settle in your dream destination. From top-tier education to exciting career prospects, we guide you every step of the way.
           </p>
 
           {/* CTA Buttons */}
@@ -109,12 +109,12 @@ const Home = () => {
               Get Started Today
               <ArrowRight className="cta-icon" />
             </button>
-            <button className="cta-button secondary-cta">
+            {/* <button className="cta-button secondary-cta">
               <div className="play-button-wrapper">
                 <Play className="play-icon" />
               </div>
               <span className="play-text">Watch Our Story</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Stats */}
@@ -205,14 +205,14 @@ const Home = () => {
             },
             {
               step: "02",
-              title: "STRATEGY DEVELOPMENT",
-              description: "Our expert team analyzes your needs and develops a comprehensive HR strategy tailored to your business.",
+              title: "DOCUMENTATION",
+              description: "Our expert technical team collects all relevant documents and processes them efficiently to ensure a smooth and hassle-free experience.",
               icon: <TrendingUp className="process-icon" />
             },
             {
               step: "03",
-              title: "IMPLEMENTATION",
-              description: "Upon completion, our team executes the strategy with precision and provides ongoing support.",
+              title: "TRAVELL PLANNING",
+              description: "Once completed, our team will handle all essential travel planning and arrangements to ensure a smooth and stress-free journey.",
               icon: <CheckCircle className="process-icon" />
             }
           ].map((process, index) => (

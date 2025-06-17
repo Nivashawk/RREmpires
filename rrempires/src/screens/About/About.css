@@ -121,7 +121,7 @@ body {
 
 @media (min-width: 768px) {
   .about-main-headline {
-    font-size: 96px; /* md:text-8xl */
+    font-size: 60px; /* md:text-8xl */
   }
 }
 

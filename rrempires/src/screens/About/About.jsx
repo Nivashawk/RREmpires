@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Users, Lightbulb, Handshake, Briefcase, Award, CheckCircle } from 'lucide-react';
-import './About.css'; // Corrected import path
+import './About.css';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,15 +24,15 @@ const About = () => {
         <div className="about-hero-content">
           <h1 className="about-main-headline">
             <span className="about-headline-part-1">
-              Our Journey to
+              Empowering Global
             </span>
             <br />
             <span className="about-headline-part-2">
-              HR Excellence
+              Dreams & Destinations
             </span>
           </h1>
           <p className="about-subtitle">
-            At <span className="about-highlight-text">RREmpire HR Solutions Pvt. Ltd.</span>, we are driven by a singular purpose: to empower businesses and individuals through unparalleled human resource services.
+            At <span className="about-highlight-text">RREmpire HR Solutions Pvt. Ltd.</span>, we specialize in global migration, education, employment, and tourism—guiding individuals through every legal and logistical step of their journey.
           </p>
         </div>
       </section>
@@ -45,7 +45,7 @@ const About = () => {
               Our Mission & Vision
             </h2>
             <p className="section-subtitle">
-              Building bridges between talent and opportunity, fostering growth and success.
+              We help you migrate, study, work, or travel abroad with confidence and clarity.
             </p>
           </div>
           <div className="mission-vision-grid">
@@ -55,7 +55,7 @@ const About = () => {
               </div>
               <h3 className="card-title">Our Mission</h3>
               <p className="card-description">
-                To provide innovative, ethical, and results-driven HR solutions that foster a culture of respect, honesty, and trust, ultimately enhancing organizational efficiency and employee well-being.
+                To simplify global mobility by offering expert guidance in migration, overseas education, job visa acquisition, and travel planning—ensuring a smooth and secure journey for every individual.
               </p>
             </div>
             <div className="mission-vision-card">
@@ -64,7 +64,7 @@ const About = () => {
               </div>
               <h3 className="card-title">Our Vision</h3>
               <p className="card-description">
-                To be the leading HR solutions partner globally, recognized for our commitment to excellence, integrity, and transforming human potential into tangible business success.
+                To be the most trusted global partner in enabling dreams of migration, education, employment, and exploration through reliable and innovative visa services.
               </p>
             </div>
           </div>
@@ -79,29 +79,29 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="section-subtitle">
-              The principles that guide every interaction and decision we make.
+              The principles that guide our promise of global opportunity.
             </p>
           </div>
           <div className="values-grid">
             <div className="value-item">
               <CheckCircle className="value-icon" />
-              <h3 className="value-title">Respect</h3>
+              <h3 className="value-title">Empathy</h3>
               <p className="value-description">
-                We treat every individual with dignity and value diverse perspectives.
+                We understand the emotional and personal significance of moving abroad, and tailor our services with compassion and care.
               </p>
             </div>
             <div className="value-item">
               <CheckCircle className="value-icon" />
-              <h3 className="value-title">Honesty</h3>
+              <h3 className="value-title">Transparency</h3>
               <p className="value-description">
-                We operate with transparency and integrity in all our dealings.
+                We ensure every step—be it visa, admission, or job application—is clear and communicated honestly, without hidden complexities.
               </p>
             </div>
             <div className="value-item">
               <CheckCircle className="value-icon" />
-              <h3 className="value-title">Trust</h3>
+              <h3 className="value-title">Reliability</h3>
               <p className="value-description">
-                We build lasting relationships based on reliability and confidence.
+                Clients trust us because we deliver consistent results, handle legalities with care, and provide support from start to settlement.
               </p>
             </div>
           </div>
@@ -116,43 +116,43 @@ const About = () => {
               Why Choose RREmpire?
             </h2>
             <p className="section-subtitle">
-              Our commitment to your success sets us apart.
+              Your global journey starts with us—expertly guided and fully supported.
             </p>
           </div>
           <div className="choose-us-grid">
             <div className="choose-us-item">
               <Award className="choose-us-icon" />
-              <h3 className="choose-us-title">Expertise & Experience</h3>
+              <h3 className="choose-us-title">Comprehensive Global Services</h3>
               <p className="choose-us-description">
-                With over 7 years in the HR domain, our team brings deep knowledge and practical insights to every challenge.
+                From migration to tourist visas, we offer end-to-end support under one roof, tailored to your goals and destination.
               </p>
             </div>
             <div className="choose-us-item">
               <Users className="choose-us-icon" />
-              <h3 className="choose-us-title">Client-Centric Approach</h3>
+              <h3 className="choose-us-title">Student & Career-Centric Focus</h3>
               <p className="choose-us-description">
-                We tailor our solutions to your unique needs, ensuring personalized and effective strategies.
+                Whether you're applying to a university or job abroad, we help you find the best match and ensure smooth visa processing.
               </p>
             </div>
             <div className="choose-us-item">
               <Briefcase className="choose-us-icon" />
-              <h3 className="choose-us-title">Proven Results</h3>
+              <h3 className="choose-us-title">Trusted by Thousands</h3>
               <p className="choose-us-description">
-                Our track record of successful placements and HR transformations speaks for itself.
+                With hundreds of success stories in migration, job placements, and overseas admissions, our impact is global and growing.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer (re-used from Home.jsx) */}
+      {/* Footer */}
       <footer className="main-footer">
         <div className="footer-content">
           <p className="copyright-text">
             © 2025 RREmpire HR Solutions Pvt. Ltd. All Rights Reserved.
           </p>
           <p className="tagline-text">
-            Where Respect, Honesty, and Trust build extraordinary workforces.
+            Your gateway to migration, education, career, and travel success.
           </p>
         </div>
       </footer>

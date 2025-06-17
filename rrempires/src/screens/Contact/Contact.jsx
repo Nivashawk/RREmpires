@@ -1,16 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react';
-import './Contact.css'; // Corrected import path
+import React, { useState, useEffect } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  ArrowRight,
+} from "lucide-react";
+import "./Contact.css"; // Corrected import path
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
-  const [formMessage, setFormMessage] = useState('');
-  const [messageType, setMessageType] = useState(''); // 'success' or 'error'
+  const [formMessage, setFormMessage] = useState("");
+  const [messageType, setMessageType] = useState(""); // 'success' or 'error'
 
   useEffect(() => {
     setIsVisible(true);
@@ -18,34 +27,36 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormMessage(''); // Clear previous messages
-    setMessageType('');
+    setFormMessage(""); // Clear previous messages
+    setMessageType("");
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      setFormMessage('Please fill in all fields.');
-      setMessageType('error');
+      setFormMessage("Please fill in all fields.");
+      setMessageType("error");
       return;
     }
 
     // Simple email validation regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      setFormMessage('Please enter a valid email address.');
-      setMessageType('error');
+      setFormMessage("Please enter a valid email address.");
+      setMessageType("error");
       return;
     }
 
     // Simulate form submission
-    console.log('Form submitted:', formData);
-    setFormMessage('Thank you for your message! We will get back to you shortly.');
-    setMessageType('success');
-    setFormData({ name: '', email: '', message: '' }); // Clear form
+    console.log("Form submitted:", formData);
+    setFormMessage(
+      "Thank you for your message! We will get back to you shortly."
+    );
+    setMessageType("success");
+    setFormData({ name: "", email: "", message: "" }); // Clear form
 
     // In a real application, you would send this data to a backend server.
     // Example:
@@ -78,19 +89,18 @@ const Contact = () => {
       </div>
 
       {/* Hero Section */}
-      <section className={`contact-hero-section ${isVisible ? 'is-visible' : ''}`}>
+      <section
+        className={`contact-hero-section ${isVisible ? "is-visible" : ""}`}
+      >
         <div className="contact-hero-content">
           <h1 className="contact-main-headline">
-            <span className="contact-headline-part-1">
-              Let's Connect
-            </span>
+            <span className="contact-headline-part-1">Let's Start Your</span>
             <br />
-            <span className="contact-headline-part-2">
-              Get in Touch
-            </span>
+            <span className="contact-headline-part-2">Global Journey</span>
           </h1>
           <p className="contact-subtitle">
-            We're here to help transform your HR. Reach out to us for inquiries, partnerships, or any support you need.
+            Whether it's migration, study, work, or travel—we’re here to guide
+            you. Reach out to begin your international journey with us.
           </p>
         </div>
       </section>
@@ -99,9 +109,7 @@ const Contact = () => {
       <section className="contact-details-section">
         <div className="contact-content-wrapper">
           <div className="section-header">
-            <h2 className="section-title gradient-text">
-              Contact Information
-            </h2>
+            <h2 className="section-title gradient-text">Contact Information</h2>
             <p className="section-subtitle">
               Find us and connect with our team.
             </p>
@@ -128,14 +136,25 @@ const Contact = () => {
                 <MapPin className="contact-detail-icon" />
                 <div>
                   <h3 className="detail-title">Our Office</h3>
-                  <p className="detail-text">123 HR Tower, Business District,<br/> Chennai, Tamil Nadu, India</p>
+                  <p className="detail-text">
+                    123 HR Tower, Business District,
+                    <br /> Chennai, Tamil Nadu, India
+                  </p>
                 </div>
               </div>
               <div className="social-media-links">
-                <a href="#" className="social-icon-link"><Facebook /></a>
-                <a href="#" className="social-icon-link"><Twitter /></a>
-                <a href="#" className="social-icon-link"><Linkedin /></a>
-                <a href="#" className="social-icon-link"><Instagram /></a>
+                <a href="#" className="social-icon-link">
+                  <Facebook />
+                </a>
+                <a href="#" className="social-icon-link">
+                  <Twitter />
+                </a>
+                <a href="#" className="social-icon-link">
+                  <Linkedin />
+                </a>
+                <a href="#" className="social-icon-link">
+                  <Instagram />
+                </a>
               </div>
             </div>
 
@@ -144,7 +163,9 @@ const Contact = () => {
               <h3 className="form-title">Send us a message</h3>
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
-                  <label htmlFor="name" className="form-label">Your Name</label>
+                  <label htmlFor="name" className="form-label">
+                    Your Name
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -156,7 +177,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="email" className="form-label">Your Email</label>
+                  <label htmlFor="email" className="form-label">
+                    Your Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -168,7 +191,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="message" className="form-label">Your Message</label>
+                  <label htmlFor="message" className="form-label">
+                    Your Message
+                  </label>
                   <textarea
                     id="message"
                     name="message"
@@ -180,7 +205,13 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 {formMessage && (
-                  <div className={`form-message ${messageType === 'success' ? 'success-message' : 'error-message'}`}>
+                  <div
+                    className={`form-message ${
+                      messageType === "success"
+                        ? "success-message"
+                        : "error-message"
+                    }`}
+                  >
                     {formMessage}
                   </div>
                 )}
