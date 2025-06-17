@@ -1,0 +1,79 @@
+/* App.css */
+
+.app-container {
+  /* No specific styles here as individual page containers manage min-height and background */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Ensure navbar is on top */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  backdrop-filter: blur(8px);
+  padding: 16px 24px; /* py-4 px-6 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo-text-rr {
+  color: #f6e05e; /* yellow-400 */
+}
+
+.logo-text-empire {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px; /* gap-6 */
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7); /* gray-300 */
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-button.active {
+  color: #f6e05e; /* yellow-400 */
+  background-color: rgba(246, 224, 94, 0.1);
+}
+
+/* Responsive adjustments for smaller screens (optional, but good practice) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
